@@ -844,7 +844,7 @@ pub struct MessageStandard {
     pub user: Option<String>,
 }
 
-#[derive(Clone, Debug, Deserialize, Serialize)]
+#[derive(Clone, Debug, Deserialize, Serialize, Default)]
 pub struct MessageStandardAttachment {
     pub author_icon: Option<String>,
     pub author_link: Option<String>,
@@ -863,7 +863,7 @@ pub struct MessageStandardAttachment {
     pub ts: Option<f32>,
 }
 
-#[derive(Clone, Debug, Deserialize, Serialize)]
+#[derive(Clone, Debug, Deserialize, Serialize, Default)]
 pub struct MessageStandardAttachmentField {
     pub short: Option<bool>,
     pub title: Option<String>,
